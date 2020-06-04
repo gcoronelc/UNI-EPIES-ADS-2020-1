@@ -5,8 +5,8 @@
 
 - Lugar: UNI
 - Horario 1: JUE de 2 a 4 pm
-- Horario 2: VIE de 2 a 5 pm
-- Inicio: 
+- Horario 2: VIE de 3 a 6 pm
+- Inicio: 04.JUNIO.2020
 
 
 # DOCENTE
@@ -22,14 +22,8 @@
 
 # Repositorios
 
-- Databases: https://github.com/gcoronelc/databases
+- Bases de datos: https://github.com/gcoronelc/databases
 - Recursos: https://github.com/gcoronelc/recursos
-
-# RUP
-
-- Enlace 1: https://youtu.be/AY5Dh3XYshk
-- Enlace 2: https://youtu.be/tbnU0jZzKTE
-- Enlace 3: https://youtu.be/PAY1fpdtzrk
 
 ## Cursos Virtuales
 
@@ -37,6 +31,13 @@
 - Java Orientado a Objetos: https://www.youtube.com/watch?v=EKlwF12-l9Y&list=PLIRq7nByT7aRuBgD4UVRjrcUZFM8Fkbut
 - Java CLIENTE-SERVIDOR: https://www.youtube.com/watch?v=MR53Xgeg28Y&list=PLIRq7nByT7aQlHn2S4gBdEQZXfgYMMKC2
 - Java Web: https://www.youtube.com/watch?v=HmXzOms6rvA&list=PLIRq7nByT7aTdpBXMuBjb-TL2kvrUpazI
+
+# RUP
+
+- Enlace 1: https://youtu.be/AY5Dh3XYshk
+- Enlace 2: https://youtu.be/tbnU0jZzKTE
+- Enlace 3: https://youtu.be/PAY1fpdtzrk
+
 
 ## Arquitectura de Software
 
