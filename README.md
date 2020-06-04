@@ -7,6 +7,7 @@
 - Horario 1: JUE de 2 a 4 pm
 - Horario 2: VIE de 3 a 6 pm
 - Inicio: 04.JUNIO.2020
+- Aula virtual: https://www.virtualfieecs.pe/
 
 
 # DOCENTE
