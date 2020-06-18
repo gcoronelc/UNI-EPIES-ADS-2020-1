@@ -1,0 +1,20 @@
+Consultar los cursos programados de un mes
+------------------------------------------
+
+1.- Diseñar el servicio
+2.- Implementar el servicio
+3.- Probar el servicio
+4.- La interface de usuario
+
+
+
+private int    idCursoProg	 ;
+private String idCurso	     ;
+private String idCiclo	     ;
+private String idProfesor	   ;
+private int    vacantes	     ;
+private int    matriculados	 ;
+private double preCursoProg	 ;
+private String horario	     ;
+private int    activo	       ;
+
