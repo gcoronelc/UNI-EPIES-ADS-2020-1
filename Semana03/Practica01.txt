@@ -1,0 +1,8 @@
+
+1.- Lenguaje SQL: Grupos, With, CASE, Etc. (10 PUNTOS - GRUPOS DE 2)
+2.- Metodología RUP     (10 PUNTOS - INDIVIDUAL)
+3.- Desarrollo con Java (X)
+
+
+A.- 1 y 2
+B.- 1, 2 y 3
