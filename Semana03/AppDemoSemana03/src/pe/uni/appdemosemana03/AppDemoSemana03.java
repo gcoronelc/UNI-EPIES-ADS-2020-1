@@ -1,5 +1,7 @@
 package pe.uni.appdemosemana03;
 
+import pe.uni.appdemosemana03.view.CursosProgView;
+
 /**
  * @author Eric Gustavo Coronel Castillo
  * @blog www.desarrollasoftware.com
@@ -12,7 +14,7 @@ public class AppDemoSemana03 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        CursosProgView.main(args);
     }
 
 }
