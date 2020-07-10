@@ -3,11 +3,15 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/GITHUB/UNI/UNI-EPIES-DAS-2020-1/Semana06/AppDemoSemana03/src/pe/uni/appdemosemana03/pruebas/Prueba01.java</file>
             <file>file:/D:/GITHUB/UNI/UNI-EPIES-DAS-2020-1/Semana06/AppDemoSemana03/src/pe/uni/appdemosemana03/service/ConsultasService.java</file>
+            <file>file:/D:/GITHUB/UNI/UNI-EPIES-DAS-2020-1/Semana06/AppDemoSemana03/src/pe/uni/appdemosemana03/service/ComboService.java</file>
             <file>file:/D:/GITHUB/UNI/UNI-EPIES-DAS-2020-1/Semana06/AppDemoSemana03/src/pe/uni/appdemosemana03/view/CursosProgView.java</file>
-            <file>file:/D:/GITHUB/UNI/UNI-EPIES-DAS-2020-1/Semana06/AppDemoSemana03/src/pe/uni/appdemosemana03/pruebas/Prueba02.java</file>
+            <file>file:/D:/GITHUB/UNI/UNI-EPIES-DAS-2020-1/Semana06/AppDemoSemana03/src/pe/uni/appdemosemana03/view/BuscarAlumnoView.java</file>
             <file>file:/D:/GITHUB/UNI/UNI-EPIES-DAS-2020-1/Semana06/AppDemoSemana03/src/pe/uni/appdemosemana03/controller/ConsultaController.java</file>
+            <file>file:/D:/GITHUB/UNI/UNI-EPIES-DAS-2020-1/Semana06/AppDemoSemana03/src/pe/uni/appdemosemana03/model/AlumnoModel.java</file>
+            <file>file:/D:/GITHUB/UNI/UNI-EPIES-DAS-2020-1/Semana06/AppDemoSemana03/src/pe/uni/appdemosemana03/view/MatriculaView.java</file>
+            <file>file:/D:/GITHUB/UNI/UNI-EPIES-DAS-2020-1/Semana06/AppDemoSemana03/src/pe/uni/appdemosemana03/pruebas/Prueba03.java</file>
+            <file>file:/D:/GITHUB/UNI/UNI-EPIES-DAS-2020-1/Semana06/AppDemoSemana03/src/pe/uni/appdemosemana03/model/ComboModel.java</file>
         </group>
     </open-files>
 </project-private>
