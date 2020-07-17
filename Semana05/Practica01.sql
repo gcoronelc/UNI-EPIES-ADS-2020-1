@@ -53,7 +53,8 @@ v3 as (
 select  c.CategoryName, p.ProductName, v3.cantidad
 from dbo.Categories c 
 join dbo.Products p on c.CategoryID = p.CategoryID
-join v3 on p.ProductID = v3.ProductID and p.CategoryID = v3.CategoryID;
+join v3 on p.ProductID = v3.ProductID and p.CategoryID = v3.CategoryID
+order by 1, 2;
 
 
 -- PREGUNTA 03 (3 Puntos)
