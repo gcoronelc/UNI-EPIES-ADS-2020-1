@@ -59,6 +59,11 @@ public class MainView extends javax.swing.JFrame {
       menuProceso.add(menuProcesoRegistrarPaciente);
 
       menuProcesoHospitalizacion.setText("Hospitalización");
+      menuProcesoHospitalizacion.addActionListener(new java.awt.event.ActionListener() {
+         public void actionPerformed(java.awt.event.ActionEvent evt) {
+            menuProcesoHospitalizacionActionPerformed(evt);
+         }
+      });
       menuProceso.add(menuProcesoHospitalizacion);
 
       menuBar.add(menuProceso);
@@ -69,11 +74,11 @@ public class MainView extends javax.swing.JFrame {
       getContentPane().setLayout(layout);
       layout.setHorizontalGroup(
          layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-         .addComponent(desktopPane, javax.swing.GroupLayout.DEFAULT_SIZE, 400, Short.MAX_VALUE)
+         .addComponent(desktopPane, javax.swing.GroupLayout.DEFAULT_SIZE, 690, Short.MAX_VALUE)
       );
       layout.setVerticalGroup(
          layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-         .addComponent(desktopPane, javax.swing.GroupLayout.DEFAULT_SIZE, 279, Short.MAX_VALUE)
+         .addComponent(desktopPane, javax.swing.GroupLayout.DEFAULT_SIZE, 357, Short.MAX_VALUE)
       );
 
       pack();
@@ -84,6 +89,12 @@ public class MainView extends javax.swing.JFrame {
 		desktopPane.add(view);
 		view.setVisible(true);
    }//GEN-LAST:event_menuProcesoRegistrarPacienteActionPerformed
+
+   private void menuProcesoHospitalizacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuProcesoHospitalizacionActionPerformed
+      HospitalizarView view = new HospitalizarView();
+		desktopPane.add(view);
+		view.setVisible(true);
+   }//GEN-LAST:event_menuProcesoHospitalizacionActionPerformed
 
     /**
      * @param args the command line arguments
