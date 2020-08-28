@@ -42,11 +42,13 @@ public class LogonView extends javax.swing.JDialog {
       jLabel1.setText("Usuario");
 
       txtUsuario.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
+      txtUsuario.setText("jtorres");
 
       jLabel2.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
       jLabel2.setText("Clave");
 
       txtClave.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
+      txtClave.setText("123456");
 
       btnAceptar.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
       btnAceptar.setText("Aceptar");

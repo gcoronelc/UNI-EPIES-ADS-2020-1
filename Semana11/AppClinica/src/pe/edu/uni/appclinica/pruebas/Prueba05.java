@@ -1,8 +1,6 @@
 package pe.edu.uni.appclinica.pruebas;
 
-import java.util.List;
 import pe.edu.uni.appclinica.model.PacienteModel;
-import pe.edu.uni.appclinica.service.ClinicaService;
 import pe.edu.uni.appclinica.view.BuscarPacienteView;
 import pe.edu.uni.appclinica.view.Session;
 

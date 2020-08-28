@@ -6,6 +6,7 @@ import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
 import pe.edu.uni.appclinica.db.AccesoDB;
+import pe.edu.uni.appclinica.model.IngresoModel;
 import pe.edu.uni.appclinica.model.PacienteModel;
 
 /**
@@ -16,9 +17,8 @@ import pe.edu.uni.appclinica.model.PacienteModel;
  * @facebook www.facebook.com/groups/desarrollasoftware/
  */
 public class ClinicaService {
-	
-	
-	public void procRegistrarPaciente(PacienteModel model){
+
+	public void procRegistrarPaciente(PacienteModel model) {
 		Connection cn = null;
 		try {
 			// Iniciar Tx
@@ -46,11 +46,10 @@ public class ClinicaService {
 			} catch (Exception e) {
 			}
 		}
-		
+
 	}
-	
-	
-	public List<PacienteModel> traerPacientes(String nombre, String apellido){
+
+	public List<PacienteModel> traerPacientes(String nombre, String apellido) {
 		List<PacienteModel> lista = new ArrayList<>();
 		Connection cn = null;
 		// Preparar variables
@@ -59,10 +58,10 @@ public class ClinicaService {
 		// Proceso
 		try {
 			cn = AccesoDB.getConnection();
-			String sql = "select idpaciente, nombre, apellido, idpersonal " +
-							"from dbo.paciente " +
-							"where nombre like ? " +
-							"and apellido like ? ";
+			String sql = "select idpaciente, nombre, apellido, idpersonal "
+					  + "from dbo.paciente "
+					  + "where nombre like ? "
+					  + "and apellido like ? ";
 			PreparedStatement pstm = cn.prepareStatement(sql);
 			pstm.setString(1, nombre);
 			pstm.setString(2, apellido);
@@ -88,4 +87,36 @@ public class ClinicaService {
 		return lista;
 	}
 
+	public void procRegistrarIngreso(IngresoModel model) {
+		Connection cn = null;
+		try {
+			// Iniciar Tx
+			cn = AccesoDB.getConnection();
+			cn.setAutoCommit(false);
+			// Registrar paciente
+			String sql = "insert into dbo.ingreso( idpersonal, idpaciente, fecha, habitacion, glosa ) " +
+							"values(?,?,convert(datetime,?,131),?,?)";
+			PreparedStatement pstm = cn.prepareStatement(sql);
+			pstm.setInt(1, model.getIdpersonal());
+			pstm.setInt(2, model.getIdpaciente());
+			pstm.setString(3, model.getFecha());
+			pstm.setInt(4, model.getHabitacion());
+			pstm.setString(5, model.getGlosa());
+			pstm.executeUpdate();
+			// Confirmar Tx
+			cn.commit();
+			pstm.close();
+		} catch (Exception e) {
+			try {
+				cn.rollback();
+			} catch (Exception e1) {
+			}
+			throw new RuntimeException("Error en el proceso Registrar Paciente.");
+		} finally {
+			try {
+				cn.close();
+			} catch (Exception e) {
+			}
+		}
+	}
 }

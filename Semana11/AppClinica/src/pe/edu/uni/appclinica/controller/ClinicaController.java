@@ -1,6 +1,7 @@
 package pe.edu.uni.appclinica.controller;
 
 import java.util.List;
+import pe.edu.uni.appclinica.model.IngresoModel;
 import pe.edu.uni.appclinica.model.PacienteModel;
 import pe.edu.uni.appclinica.service.ClinicaService;
 
@@ -28,4 +29,7 @@ public class ClinicaController {
 		return clinicaService.traerPacientes(nombre, apellido);
 	}
 	
+	public void procRegistrarIngreso(IngresoModel model) {
+		clinicaService.procRegistrarIngreso(model);
+	}
 }
